@@ -43,7 +43,7 @@ class ProjectServiceImpl(ProjectService):
 
     def create(self, project):
         return Create(self.connection, project).execute()
-    
+
     def create_copy(self, project, project_id):
         return CreateCopy(self.connection, project, project_id).execute()
 
